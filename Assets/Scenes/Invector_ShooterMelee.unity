@@ -20764,13 +20764,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5df8acf8f1c21fa48b7c49ccbf1ef60a,
         type: 2}
+    - target: {fileID: 11478012, guid: 092f8aa667b2004459042a82a4c9e41d, type: 3}
+      propertyPath: openCloseWindow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11480394, guid: 092f8aa667b2004459042a82a4c9e41d, type: 3}
       propertyPath: inEdit
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11499794, guid: 092f8aa667b2004459042a82a4c9e41d, type: 3}
       propertyPath: openCloseWindow
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11499794, guid: 092f8aa667b2004459042a82a4c9e41d, type: 3}
       propertyPath: selectedToolbar

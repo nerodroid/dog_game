@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Invector_ShooterMelee.unity
-    guid: 14de78b2e57729e4d8484b53909f05c9
+    path: Assets/Scenes/Demo_01 1.unity
+    guid: b4cedde1cd70f01419455c901c29f536
   m_configObjects: {}
