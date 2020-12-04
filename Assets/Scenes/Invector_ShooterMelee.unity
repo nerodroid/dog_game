@@ -20751,6 +20751,10 @@ PrefabInstance:
       propertyPath: selectedToolbar
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11436876, guid: 092f8aa667b2004459042a82a4c9e41d, type: 3}
+      propertyPath: openCloseWindow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11439352, guid: 092f8aa667b2004459042a82a4c9e41d, type: 3}
       propertyPath: openCloseWindow
       value: 0
@@ -94003,7 +94007,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1645189946640246, guid: b796c65458d0efc44b9b996819aa248f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4208734411024940, guid: b796c65458d0efc44b9b996819aa248f, type: 3}
       propertyPath: m_RootOrder
@@ -94497,22 +94501,22 @@ PrefabInstance:
     - target: {fileID: 224545686162738850, guid: b796c65458d0efc44b9b996819aa248f,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224545686162738850, guid: b796c65458d0efc44b9b996819aa248f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224689541774944614, guid: b796c65458d0efc44b9b996819aa248f,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224689541774944614, guid: b796c65458d0efc44b9b996819aa248f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b796c65458d0efc44b9b996819aa248f, type: 3}
