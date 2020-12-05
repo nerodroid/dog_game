@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
 
@@ -46,11 +46,31 @@ public class PauseMenu : MonoBehaviour
             
         }
 
-         if (Input.GetKeyDown("I")){
-
-             Cursor.lockState = CursorLockMode.None;
-			    Cursor.visible = (true);
-			    CursorLockedVar = (false);
-         }
+        
     }
+    public void ExitGame(){
+        Application.Quit();
+    }
+
+
+    public void ToMainMenu(){
+        //SceneManager.UnloadScene(SceneManager.GetActiveScene());
+
+
+        //GameObject.Destroy(GameObject.Find("Inventory_Shooter(Clone)"));
+        //GameObject.Destroy(GameObject.Find("vGameController Instance"));
+        //GameObject.Destroy(GameObject.Find("Player_Tomek Instance"));
+        SceneManager.LoadScene( SceneManager.GetActiveScene().name );
+    }
+
+    public void Restart(){
+
+        Resume();
+    }
+
+
+
+
+
+
 }

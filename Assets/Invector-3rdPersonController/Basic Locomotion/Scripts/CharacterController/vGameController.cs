@@ -20,6 +20,10 @@ namespace Invector
         [vHelpBox("Display a message using the FadeText UI")]
         public bool displayInfoInFadeText = true;
 
+        public Transform spawn;
+
+
+
         [HideInInspector]
         public OnRealoadGame OnReloadGame = new OnRealoadGame();
         [HideInInspector]
@@ -30,6 +34,8 @@ namespace Invector
 
         void Start()
         {
+
+            
             if (instance == null)
             {
                 instance = this;
@@ -47,6 +53,40 @@ namespace Invector
                 vHUDController.instance.ShowText("Init Scene");
             FindPlayer();
         }
+
+        public void customRestart(GameObject _gameObject){
+
+            oldPlayer = _gameObject;
+
+
+
+
+            if (playerPrefab != null){
+
+                StartCoroutine(Spawn());
+                
+                Debug.Log("not null");
+            }
+                
+
+            else
+            {
+                Debug.Log("null");
+                if (displayInfoInFadeText && vHUDController.instance)
+                    vHUDController.instance.ShowText("Restarting Scene...");
+
+                
+                Invoke("ResetScene", 0);
+
+            }
+
+
+
+
+        }
+
+
+
 
         public void OnCharacterDead(GameObject _gameObject)
         {
@@ -168,6 +208,11 @@ namespace Invector
             {
                 Destroy(oldPlayer);
             }
+
+            //////////////////////////////////////////////////////////////////////////
+            currentPlayer.transform.position = spawnPoint.position;
+            currentPlayer.transform.rotation = spawnPoint.rotation;
+            
         }
 
         private void DestroyPlayerComponents(GameObject target)
