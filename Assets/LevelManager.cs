@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
    
     public GameObject loadingScreen ;
     public Slider slider;
-
+    //public string gotoScene;
     public void LoadLevel(int sceneIndex){
         
         
@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator LoadAsynchronously(int sceneIndex){
               
-        AsyncOperation operation = SceneManager.LoadSceneAsync("Level1");
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
         loadingScreen.SetActive(true);
 

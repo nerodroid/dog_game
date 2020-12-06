@@ -534,6 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 1739161064}
   slider: {fileID: 421330409}
+  sceneToGo: Level1
 --- !u!114 &390308580
 MonoBehaviour:
   m_ObjectHideFlags: 0
