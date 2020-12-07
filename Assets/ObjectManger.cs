@@ -10,6 +10,9 @@ public class ObjectManger : MonoBehaviour
     public string objectPointText;
 
     public GameObject[] activables;
+
+
+    public bool deactive ;
     //public GameObject textCanves ;
 
 
@@ -29,7 +32,10 @@ public class ObjectManger : MonoBehaviour
             Debug.Log(objectPointText);
             textMesh.text = objectPointText;
 
-            this.gameObject.SetActive(false);
+
+
+            if (deactive)
+                this.gameObject.SetActive(false);
 
 
            
