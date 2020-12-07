@@ -16816,7 +16816,7 @@ MonoBehaviour:
   timeScaleWhileIsOpen: 0
   originalTimeScale: 1
   updatedTimeScale: 0
-  dontDestroyOnLoad: 1
+  dontDestroyOnLoad: 0
   changeEquipmentControllers:
   - useItemInput:
       useInput: 0

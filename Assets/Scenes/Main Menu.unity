@@ -382,7 +382,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -529,12 +529,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 390308578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e97f6df3e5f630842934e579e6990321, type: 3}
+  m_Script: {fileID: 11500000, guid: c421e02b4a2a0ce47adaae1f05c1775a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 1739161064}
   slider: {fileID: 421330409}
-  sceneToGo: Level1
 --- !u!114 &390308580
 MonoBehaviour:
   m_ObjectHideFlags: 0
