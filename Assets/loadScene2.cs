@@ -18,7 +18,9 @@ public class loadScene2 : MonoBehaviour
             //textMesh = GetComponent<TMP_Text>();
 
             //lm.LoadLevel(sceneIndex);
-            lm.transform.GetComponent<LevelManager> ().LoadLevel (sceneIndex);
+
+            StartCoroutine(waiter());
+            
            /// SceneManager.LoadScene(3);
            
 
@@ -27,4 +29,22 @@ public class loadScene2 : MonoBehaviour
 
 
     }
+
+
+    IEnumerator waiter()
+    {
+        
+        yield return new WaitForSeconds(4);
+        lm.transform.GetComponent<LevelManager> ().LoadLevel (sceneIndex);
+       
+    }
+
+
+
+
+
+
+
+
+
 }
